@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AquaTech Solutions: Industrial Wastewater, Aquatic Impacts &amp; Treatment</title>
+<link rel="icon" type="image/jpeg" href="favicon.png.jpeg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav aria-label="Main"><b>💧 AquaTech Solutions</b><a href="#impacts">Impacts</a><a href="#tech">Technologies</a><a href="#selector">Selector</a><a href="#matrix">Comparison</a><a href="#limits">Standards</a><a href="#cases">Case Studies</a><a class="cta" href="#limits">Explore Data</a></nav>
+
+<header class="hero"><div class="wrap">
+<h1>Restoring Aquatic Life Through Advanced Industrial Wastewater Treatment</h1>
+<p>Industry feeds economies, yet its effluent can strip rivers, lakes and coasts of oxygen and life. Balancing growth with freshwater and marine preservation starts with treating water to the right standard, at the right cost.</p>
+<a class="btn b1" href="#tech">Explore Technologies</a><a class="btn b2" href="#impacts">View Aquatic Impacts</a>
+<div class="stats" id="stats"></div>
+<p class="small" style="color:#94a3b8;margin-top:14px">Figures are widely cited estimates (UN-Water, WHO, UNEP, EPA, CPCB) and vary by region and year.</p>
+</div></header>
+
+<section id="impacts"><div class="wrap">
+<h2>1. The Crisis: Impacts on Aquatic Ecosystems</h2><p class="sub">Select a pollution pathway to see sources, effects and key numbers.</p>
+<div class="tabs" role="tablist" id="impTabs"></div><div class="card" id="impBody" role="tabpanel"></div>
+<h3 style="margin-top:30px">Healthy vs. polluted habitat</h3>
+<div class="tabs"><button class="tab" id="hBtn" aria-selected="true">Healthy</button><button class="tab" id="pBtn" aria-selected="false">Polluted</button></div>
+<div class="habitat healthy" id="habitat"></div>
+</div></section>
+
+<section id="tech" style="background:rgba(8,145,178,.05)"><div class="wrap">
+<h2>2. Treatment Technologies Flowsheet</h2><p class="sub">Four stages, from bulk solids removal to nature-based polishing.</p>
+<div class="tabs" role="tablist" id="stTabs"></div><div class="card" id="stBody" role="tabpanel"></div>
+</div></section>
+
+<section id="selector"><div class="wrap">
+<h2>3. Treatment Train Selector</h2><p class="sub">Pick an industry for its typical effluent profile, aquatic risks and a suggested treatment train.</p>
+<label for="ind"><b>Industry:</b></label> <select id="ind"></select>
+<div class="card" id="indBody" style="margin-top:16px" aria-live="polite"></div>
+</div></section>
+
+<section id="matrix" style="background:rgba(8,145,178,.05)"><div class="wrap">
+<h2>4. Technology Comparison Matrix</h2><p class="sub">Indicative ranges; actual values depend on wastewater and site.</p>
+<div class="scroll"><table id="mx"></table></div>
+</div></section>
+
+<section id="limits"><div class="wrap">
+<h2>5. Pollutants &amp; Discharge Standards</h2><p class="sub">Indicative limits for context. Always check current local regulations and your permit.</p>
+<div class="scroll"><table id="lim"></table></div>
+<p class="small">CPCB = India general standards for discharge to inland surface water (mg/L). EPA/WHO = drinking-water guidance values, used as a benchmark for what aquatic and downstream users should receive. PFAS: US EPA 2024 MCL of 4 ng/L each for PFOA and PFOS.</p>
+</div></section>
+
+<section id="cases" style="background:rgba(8,145,178,.05)"><div class="wrap">
+<h2>6. Case Studies &amp; Reference Points</h2><div class="grid" id="cs"></div>
+</div></section>
+
+<footer><div class="wrap"><div class="grid">
+<div><b>AquaTech Solutions</b><br>Education on industrial effluent and aquatic protection.</div>
+<div><b>Quick links</b><br><a href="#impacts">Impacts</a> · <a href="#tech">Technologies</a> · <a href="#selector">Selector</a> · <a href="#matrix">Comparison</a></div>
+<div><b>References</b><br>UN-Water &amp; UNEP; WHO Guidelines for Drinking-water Quality; US EPA (Clean Water Act, NPDES, PFAS rule); India CPCB / MoEFCC; EU Industrial Emissions Directive; Metcalf &amp; Eddy, <i>Wastewater Engineering</i>.</div>
+<div><label for="em"><b>Newsletter</b></label><br><input id="em" type="email" placeholder="you@example.com"> <button class="btn b1" id="sub" type="button">Subscribe</button><div id="subMsg" class="small" aria-live="polite"></div></div>
+</div><p class="small" style="margin-top:24px">Educational content, not engineering or legal advice. Values are indicative and should be verified against current standards.</p></div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>

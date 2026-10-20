@@ -1,0 +1,41 @@
+:root{--bg:#f8fafc;--card:#fff;--ink:#0f172a;--mute:#475569;--line:#e2e8f0;--teal:#0891b2;--em:#059669;--red:#dc2626;--nav:#0f172a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--card:#131c2e;--ink:#e2e8f0;--mute:#94a3b8;--line:#243049;--teal:#22d3ee;--em:#34d399;--red:#f87171;--nav:#020617}}
+:root[data-theme="dark"]{--bg:#0b1220;--card:#131c2e;--ink:#e2e8f0;--mute:#94a3b8;--line:#243049;--teal:#22d3ee;--em:#34d399;--red:#f87171;--nav:#020617}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:var(--teal)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--nav);display:flex;align-items:center;gap:18px;padding:12px 20px;flex-wrap:wrap}
+nav b{color:#22d3ee;font-size:18px;margin-right:auto}nav a{color:#cbd5e1;text-decoration:none;font-size:14px}
+nav .cta{background:#06b6d4;color:#042f3a;padding:7px 14px;border-radius:8px;font-weight:600}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.hero{background:linear-gradient(135deg,#0f172a,#0e4a5c 60%,#047857);color:#fff;padding:64px 0 56px}
+.hero h1{font-size:clamp(28px,5vw,48px);line-height:1.15;margin:0 0 14px;max-width:780px}
+.hero p{max-width:680px;color:#cbd5e1;margin:0 0 24px}
+.btn{display:inline-block;padding:11px 20px;border-radius:9px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-size:15px}
+.b1{background:#06b6d4;color:#042f3a}.b2{background:transparent;color:#fff;border:1px solid #67e8f9;margin-left:8px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:34px}
+.stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:16px}
+.stat b{font-size:34px;color:#67e8f9;display:block}.stat span{font-size:13px;color:#cbd5e1}
+section{padding:56px 0}h2{font-size:28px;margin:0 0 6px}.sub{color:var(--mute);margin:0 0 24px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tab{background:var(--card);color:var(--ink);border:1px solid var(--line);padding:9px 15px;border-radius:9px;cursor:pointer;font:600 14px system-ui}
+.tab[aria-selected="true"]{background:var(--teal);color:#042f3a;border-color:var(--teal)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.kv{margin:0 0 10px}.kv b{color:var(--teal)}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden;margin:4px 0 12px}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--teal),var(--em));border-radius:6px;transition:width .5s}
+.small{font-size:13px;color:var(--mute)}
+.tag{display:inline-block;background:rgba(8,145,178,.14);color:var(--teal);padding:2px 9px;border-radius:99px;font-size:12px;margin:2px 3px 2px 0}
+.habitat{border-radius:14px;padding:22px;color:#fff;transition:background .4s}
+.healthy{background:linear-gradient(#0e7490,#065f46)}.polluted{background:linear-gradient(#57534e,#292524)}
+.habitat ul{margin:8px 0 0;padding-left:18px}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid var(--line)}th{background:rgba(8,145,178,.12);font-size:13px}
+select{font:16px system-ui;padding:10px;border-radius:9px;border:1px solid var(--line);background:var(--card);color:var(--ink);min-width:220px}
+.train{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0}
+.step{background:var(--teal);color:#042f3a;padding:6px 12px;border-radius:8px;font-weight:600;font-size:13px}
+.arr{color:var(--mute)}
+footer{background:var(--nav);color:#cbd5e1;padding:40px 0 30px;font-size:14px}footer a{color:#67e8f9}
+footer input{padding:10px;border-radius:8px;border:0;min-width:220px;font-size:15px}
+:focus-visible{outline:3px solid #f59e0b;outline-offset:2px}
